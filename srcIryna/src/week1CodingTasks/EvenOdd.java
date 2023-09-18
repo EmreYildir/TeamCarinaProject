@@ -14,4 +14,5 @@ public class EvenOdd {
             System.out.println(6 + "=Odd");
         }
     }
+    //Here, I am using an if statement in order to decipher whether an integer is even or odd. The statement checks whether the integer is divisible by 2, by checking whether the remainder is going to be 0 or not
 }
