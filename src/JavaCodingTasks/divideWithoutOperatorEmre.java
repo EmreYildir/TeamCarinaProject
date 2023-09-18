@@ -1,6 +1,6 @@
 package JavaCodingTasks;
 
-public class divideWithoutOperator {
+public class divideWithoutOperatorEmre {
 
     public static void main(String[] args) {
 
