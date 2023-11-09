@@ -25,6 +25,7 @@ public class PrimeNumberEmre {
 
      */
 
+    // √241   15,5  241 %  2 3 5 7 11 15
 
     public static boolean isPrime(int number) {
         if (number <= 1) {

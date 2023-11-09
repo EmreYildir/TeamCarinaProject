@@ -4,7 +4,7 @@ public class FrequencyOfCharactersEmre {
 
     public static void main(String[] args) {
 
-        String str = "AAABBCDD";
+        String str = "ABAABCDD";
 
         String result = "";     //A3B2C1D2
         //a b c d

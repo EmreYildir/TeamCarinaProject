@@ -22,8 +22,8 @@ public class divideWithoutOperatorEmre {
         int count = 0;        // Initialize the count to 0.
 
         // Determine the sign of the result
-        boolean isNegative = (num1 < 0) ^ (num2 < 0);
-        // isNegative is true if the signs of num1 and num2 are different.
+        boolean isNegative = (num1 < 0) && (num2 < 0);
+        // isNegative is true if the signs of num1 and num2 are negative.
 
         // Make both numbers positive for the calculation
         long absNum1 = Math.abs((long) num1);   // Take the absolute value of num1.
