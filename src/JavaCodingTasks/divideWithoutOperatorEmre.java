@@ -5,8 +5,8 @@ public class divideWithoutOperatorEmre {
     public static void main(String[] args) {
 
         // method called in main to see result.
-        division(6,3);
-        division(6,4);
+        division(-6,-2);
+        division(-6,-4);
 
 
     }
@@ -14,23 +14,32 @@ public class divideWithoutOperatorEmre {
 
     // method takes 2 numbers and performs division without operator.
     public static void division(int num1, int num2) {
-        // division by zero is undefined.
-        if (num2 == 0) {  // if num2 is 0, print error message.
+        if (num2 == 0) {
             System.err.println("CANNOT DIVIDE BY ZERO");
-            return; // exit method if condition is true.
+            return;
         }
 
-        int count = 0; // to keep track how many times num2 can be subtracted from num1.
-        String result = num1 + " / " + num2 + " is ";
+        int count = 0;        // Initialize the count to 0.
 
-        while (num1 >= num2) { // continue to perform as long as num1 is greater or equal to num2
-            count++; // increment count every time division performed.
-            num1 -= num2;   //  subtract num2 from num1 to simulate division operation
+        // Determine the sign of the result
+        boolean isNegative = (num1 < 0) && (num2 < 0);
+        // isNegative is true if the signs of num1 and num2 are negative.
+
+        // Make both numbers positive for the calculation
+        long absNum1 = Math.abs((long) num1);   // Take the absolute value of num1.
+        long absNum2 = Math.abs((long) num2);   // Take the absolute value of num2.
+
+        while (absNum1 >= absNum2) {
+            absNum1 -= absNum2;   // Subtract absNum2 from absNum1.
+            count++;           // Increment the count.
         }
 
-        System.out.println(result + count + " with remainder " + num1);
+        if (isNegative) {
+            count = -count;  // If isNegative is true, make the count negative.
+        }
 
-
+        System.out.println(num1 + " / " + num2 + " is " + count + " with remainder " + absNum1);
+        // Print the result with explanation.
     }
 
 }
