@@ -7,6 +7,7 @@ public class FinraOleg {
             System.exit(1);
         }
         for(int i = 1; i<=a; i++){
+
             if(i%15==0){ // if number is multiple of 15
                 System.out.println("FINRA");
             }else if(i%3==0){  // if number is multiple of 15
