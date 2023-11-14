@@ -1,6 +1,5 @@
 package JavaCodingTasks;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class week4SameLettersOM {

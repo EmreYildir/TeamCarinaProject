@@ -3,7 +3,6 @@ package JavaCodingTasks;
 public class reversedString {
     public static void main(String[] args) {
         System.out.println("reversed(\"abcdefg\") = " + reversed("abcdefg"));
-        String str = "sdgfdgsd";
     }
 
 //reverse string
